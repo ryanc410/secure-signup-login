@@ -90,7 +90,8 @@ cd secure-signup-login
 ```
 
 2. Create the Database
-   Import the Database schema:
+
+Import the Database schema:
 
 ```bash
 mysql -u root -p < database.sql
