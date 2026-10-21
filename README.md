@@ -1,5 +1,5 @@
 # PHP PDO Authentication System
-
+<div id="top" style="display: none;">
 A reusable PHP authentication system built with PHP, PDO, MySQL/MariaDB, Bootstrap 5, and the Fetch API. Includes user registration, login, logout, session management, CSRF protection, password hashing, server-side validation, and protected dashboard pages.
 
 ## Table of Contents
@@ -27,7 +27,7 @@ A reusable PHP authentication system built with PHP, PDO, MySQL/MariaDB, Bootstr
 - Role field for future role-based access control.
 - Environment-based configuration for database credentials.
 
-[Back to Top](#php_pdo_authentication_system)
+[Back to Top](#top)
 
 ## Project Structure
 
