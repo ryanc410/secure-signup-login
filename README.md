@@ -1,5 +1,6 @@
-# PHP PDO Authentication System
 <div id="top" style="display: none;">
+# PHP PDO Authentication System
+
 A reusable PHP authentication system built with PHP, PDO, MySQL/MariaDB, Bootstrap 5, and the Fetch API. Includes user registration, login, logout, session management, CSRF protection, password hashing, server-side validation, and protected dashboard pages.
 
 ## Table of Contents
@@ -57,7 +58,7 @@ auth-app/
 - `public/assets/` — Frontend JavaScript.
 - `database.sql` — Database and user table schema.
 
-[Back to Top](#php_pdo_authentication_system)
+[Back to Top](#top)
 
 ## Requirements
 
@@ -76,7 +77,7 @@ php -v
 php -m | grep -E 'PDO|pdo_mysql'
 ```
 
-[Back to Top](#php_pdo_authentication_system)
+[Back to Top](#top)
 
 ## Installation
 
@@ -169,7 +170,7 @@ Open the application:
 - Signup: http://127.0.0.1:8000/signup.php
 - Dashboard: http://127.0.0.1:8000/dashboard.php
 
-[Back to Top](#php_pdo_authentication_system)
+[Back to Top](#top)
 
 ## Authentication Workflow
 
@@ -205,7 +206,7 @@ Open the application:
 - The session is destroyed.
 - The user is redirected to the login page.
 
-[Back to Top](#php_pdo_authentication_system)
+[Back to Top](#top)
 
 ## Class Reference
 
@@ -222,7 +223,7 @@ The `Auth` class provides the following methods:
 | `check()`                                | Checks whether the user is authenticated.       |
 | `logout()`                               | Clears and destroys the current session.        |
 
-[Back to Top](#php_pdo_authentication_system)
+[Back to Top](#top)
 
 ## Troubleshooting
 
@@ -249,7 +250,11 @@ Ensure the session cookie is being sent and that the submitted form contains the
 
 Verify that session cookies are enabled and that PHP is using the same session configuration across requests. When running behind a reverse proxy, ensure HTTPS and cookie settings are configured correctly.
 
+[Back to Top](#top)
+
 ## Authors
 
 Ryan Cook
 [Send Me an Email](ryanhtown713@outlook.com)
+
+[Back to Top](#top)
