@@ -24,7 +24,6 @@ $csrfToken = $auth->csrfToken();
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="dashboard.php">My Application</a>
-
       <form action="logout.php" method="post" class="ms-auto">
         <input type="hidden" name="csrf_token" value="<?= e($csrfToken) ?>">
         <button class="btn btn-outline-light btn-sm" type="submit">
@@ -32,6 +31,9 @@ $csrfToken = $auth->csrfToken();
         </button>
       </form>
     </div>
+    <?php if (($user['role'] ?? '') === 'admin'): ?>
+    <a href="admin/users.php" class="btn btn-outline-primary btn-sm">Manage Users</a>
+    <?php endif; ?>
   </nav>
 
   <main class="container py-5">

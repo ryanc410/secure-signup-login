@@ -72,3 +72,18 @@ function jsonResponse(array $data, int $status = 200): never
     echo json_encode($data);
     exit;
 }
+
+/**
+ * Admin User Access
+ */
+function requireAdmin(Auth $auth): void
+{
+    requireLogin($auth);
+
+    $user = $auth->user();
+
+    if (($user['role'] ?? null) !== 'admin') {
+        http_response_code(403);
+        exit('403 Forbidden: Administrator access required.');
+    }
+}
